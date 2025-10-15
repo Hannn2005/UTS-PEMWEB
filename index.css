@@ -1,0 +1,567 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Didot;
+}
+
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+/* portofolio-section */
+        
+
+/* Navigasi*/
+
+.nav-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-header{
+    position: fixed;
+    top: 20px;
+    display: flex;
+    background-color: black;
+    border-radius: 20px;
+    z-index: 100;
+}
+
+.main-header ul li{
+    display: inline-block;
+    padding: 20px;
+}
+
+.main-header ul li a{
+    font-size: 1.5rem;
+    transition: 0.5s;
+}
+
+.main-header ul li a:hover{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #F5F5F5;
+    color: #121212;
+}
+
+
+
+
+
+
+
+/* profil */
+
+.profil-body{
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.8) ,rgb(0, 0, 0,0.6)), 
+        url('asset/bg-main-profile.jpg');
+    background-size : contain;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    color: 	#f2e7d8;
+
+}
+
+.profil-container{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 200px;
+}
+
+.title{
+    font-size: 4.5rem;
+}
+.profil-menu{
+    font-size: 10px;
+    margin: 50px 50px 300px 50px;
+    display: flex;
+    justify-content: center;
+    gap : 10em;
+    
+}
+
+.profil-menu h1{
+    font-size: 4em;
+    white-space: nowrap;
+    line-height: 1.5em;
+}
+.profil-menu h2{
+    font-size: 3em;
+    line-height: 2em;
+}
+.profil-menu h3{
+    font-size: 1.5em;
+    font-size: 2.5em;
+}
+
+.profil-menu img{
+    width: 20em;
+    margin-right: 2em;
+}
+
+
+
+
+
+/* tentang saya */
+
+
+.tentang-saya{
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 50px 150px;
+    align-items: center;
+    gap: 5em;
+    text-align: justify;
+    line-height: 3em;
+}
+
+.tentang-saya h1{
+    font-size: 4.5rem;
+}
+
+.tentang-saya .deskripsi{
+    text-indent: 2em;
+    font-size: 2.5em;
+    line-height: 1.5em;
+}
+
+.tentang-saya img{
+    height: 30em;
+    border-radius: 2em;    
+}
+
+.teks{
+    display: flex; 
+    gap : 40px;
+    align-items: center;
+}
+
+
+.motto{
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    background-color: #aeb6a0;
+    color: black; 
+}
+
+
+
+
+/* jadwal */
+
+.jadwal{
+    display: flex;
+    flex-direction: column;
+}
+.jadwal h1{
+    color: white;
+    text-align: center;
+    font-size: 4.5rem;
+    margin-bottom: 20px;
+}
+
+.table-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f2e7d8;
+    margin: 0 auto;
+    width: 900px;
+    border-radius: 15px;
+    
+    
+}
+table{
+    margin: 40px;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+
+th,td{
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+    color: black;
+    width: 300px;
+    
+}
+
+td:nth-child(1) {
+    background-color: 	#aeb6a0;
+    
+    color: black;
+
+}
+
+td:nth-child(n+2) {
+    background-color: 	#d9e6d9;
+    color: black
+}
+
+
+
+
+
+
+
+
+/* kontak */
+
+
+.kontak{
+    height: 300px;
+    width: 450px;
+    margin: 15rem auto; 
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+}
+
+.kontak h1{
+    font-size: 4em; ;
+}
+
+.sosmed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.sosmed-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.8s;
+}
+.sosmed-container:hover{
+    padding: 50px;
+    
+}
+.kontak .sosmed div a img{
+    width: 100px;
+    border-radius: 20px;
+}
+
+.kontak button{
+    padding: 5px 20px;
+    height: 50px;
+    font-size: 1.5rem;
+    background-color: #aeb6a0;
+    border: none;
+    border-radius: 30px;
+    color: #521515;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.kontak button:hover{
+    background-color: transparent;
+    color: #aeb6a0;
+    border: 2px solid #aeb6a0;
+}
+
+/* end of portofolio section */
+
+
+
+
+/* tools section */
+
+
+.tools-header{
+    height: 100vh;
+     background: 
+        linear-gradient(to bottom, rgba(0,0,0,0.8) 20%, rgba(255, 255, 255, 0.5) 70%),
+        url("asset/tes-bg.jpg");
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+
+
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+    
+    gap: 30px;
+ 
+}
+
+.hero-section h1{
+    font-family: Sansation;
+    font-size: 4.5rem;
+    font-weight: 900;
+}
+
+.hero-section h2{
+    font-family: Sansation;
+    font-size: 3.5rem;
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 40px;
+    background-color: #719192;
+}
+
+
+.logo-container{
+    display: flex;
+    gap: 50px;
+}
+
+.logo-container img{
+    width: 100px;
+}
+
+
+
+/* main */
+
+.tools-main{   
+    display: flex;
+    flex-direction: column;
+    background: 
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 20%, rgb(0, 0, 0,0.9) 100%),
+        url("asset/tes-bg.jpg");
+    
+}
+
+.html-section,
+.css-section,
+.js-section,
+.tw-section
+{
+  padding: 50px 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+ 
+}
+
+.html-section p,
+.css-section p,
+.js-section p,
+.tw-section p
+{
+   text-align: justify;
+   padding: 30px;
+   border-radius: 20px;
+   line-height: 35px;
+   color: white;
+   font-size: 1.5rem;
+   justify-self: center; 
+   align-self: center; 
+   background: 
+    linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),
+    url(../asset/bg-menu-2.jpg);
+
+}
+
+.html-section img,
+.css-section img,
+.js-section img,
+.tw-section img{
+   width: 400px;
+   justify-self: center; 
+   align-self: center; 
+   
+}
+
+
+/* end of tools section */
+
+
+
+
+/* tutorial container */
+
+/* Header */
+
+.tutorial-header{
+    background: 
+        linear-gradient(to bottom, rgba(0,0,0,0.9) 10%, rgba(255,255,255,0)100%),
+        url("asset/header-bg.jpg");
+
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: 	#f2e7d8;
+}
+
+
+.tutorial-header h1{
+    background-color: #121212;
+    font-size: 3rem;
+    color: white;
+    padding: 0.7rem;
+    border-radius: 0.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.tutorial-header hr{
+    width: 100vh;
+    margin-bottom: 1rem;
+    color: #121212;
+}
+
+.tutorial-header p{
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #121212;
+    text-align: justify;
+    margin: 0px 100px 0px 100px;
+    background-color: #F5F5F5;;
+    padding: 0.7rem;
+    border-radius: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+.tutorial-logo-container{
+    display: flex;
+    gap: 20px;
+
+}
+
+.tutorial-logo-container img{
+    width: 8rem;
+}
+
+/* Main */
+
+.tutorial-main-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: #121212;
+}
+
+.html-container, .js-container, .css-container{
+    padding-top: 20px;
+    display: grid;
+    grid-template-rows: 100px 250px;
+   
+}
+
+.html-container,.js-container{
+    background-color: #F5F5F5;
+}
+
+.css-container{
+    background-color: #121212;
+}
+
+
+
+.html-container h1,.js-container h1, .css-container h1{
+    padding: 0.8rem;
+    border-radius: 1rem;
+    align-self: center;
+    justify-self: center;
+}
+
+.html-container h1,.js-container h1{
+    color: #F5F5F5;
+    background-color: #121212;
+}
+
+.css-container h1{
+    color: #121212;
+    background-color: #F5F5F5;
+}
+
+
+.html-container p,.js-container p,.css-container p{
+    font-size: 1.5rem;
+    padding: 0px 15px 0px 15px;
+    text-align: justify;
+}
+
+.css-container p{
+    color: #F5F5F5;
+}
+
+
+.html-container iframe,.js-container iframe,.css-container iframe{
+     align-self: center;
+    justify-self: center;
+}
+
+/* end of tutorial section */
+
+
+
+
+/* kesan dan pesan section */
+
+
+.kesan-pesan-container{
+    background: 
+        linear-gradient(rgba(0,0,0,0.8) , rgba(0,0,0, 0.8)), 
+        url('asset/keesan-section-bg.png');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+
+}   
+
+.kesan-pesan-container p{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.kesan-judul{
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.kesan-isi{
+    font-size: 2rem;
+    margin: 0px 50px 0px 50px;
+    text-align: center;
+   
+}
+
+.pesan{
+    font-size: 2.3rem;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 0px 50px 0px 50px;
+    text-align: center;
+    background-color: rgb(74, 69, 69);
+}
